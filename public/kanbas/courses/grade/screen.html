@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Grades</title>
+</head>
+
+<body>
+
+<table>
+    
+    <tr>
+        <td valign = "top">
+            <ul>
+                <li><a href="/kanbas/account/profile/screen.html">Account</a></li>
+                <li><a href="/kanbas/dashboard/screen.html">Dashboard</a></li>
+                <li><a href="/kanbas/courses/home/screen.html">Courses</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            
+             </ul>
+        </td>
+
+        <td valign = "top">
+            <ul>
+                <li><a href="/kanbas/courses/home/screen.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom meetings</a></li>
+                <li><a href="/kanbas/courses/assignment/screen.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="/kanbas/courses/grade/screen.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Videos</a></li>
+
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="/kanbas/courses/settings/index.html">Settings</a></li>
+             </ul>
+        </td>
+
+        <td valign = "top">
+
+            <select id="GRDBook">
+                <option value="Other">Other</option>
+                <option selected value="GRDBook"> Gradebook</option>
+            </select>
+            <button type="button">Import</button>
+            <select id="Export">
+                <option value="Other">Other</option>
+                <option selected value="Exp"> Export</option>
+            </select>
+            <button type="button">Configure</button>
+
+
+            <h3>Student Names</h3>
+            <input id="search-student" placeholder="Search Students"/><br/>
+            
+            
+            
+            <h3>Assignment Names</h3>
+
+            <input id="search-assignment" placeholder="Search Assignments"/><br/>
+            <br/>
+            
+            <table border="1" width="100%">
+                <thead>
+                <tr>
+                    <th colspan="3">Student Name</th>
+                    <th>A1 Setup <br/>Out of 100 </th>
+                    <th>A2 Setup <br/>Out of 100 </th>
+                    <th>A3 Setup <br/>Out of 100 </th>
+                    <th>A4 Setup <br/>Out of 100 </th>
+                    <th>A5 Setup <br/>Out of 100 </th>
+                    <th>A6 Setup <br/>Out of 100 </th>
+                    <th>A7 Setup <br/>Out of 100 </th>
+                    <th>A8 Setup <br/>Out of 100 </th>
+                    <th>A9 Setup <br/>Out of 100 </th>
+
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr >
+                    <th colspan="3">Alex</th>
+                    <th>0</th>
+                    <th>0 </th>
+                    <th>0 </th>
+                    <th><input id="field-of-grade1" placeholder="100"></th>
+                    <th>0 </th>
+                    <th>0</th>
+                    <th>0 </th>
+                    <th>0 </th>
+                    <th>0 </th>
+                </tr>
+                <tr>
+                    <th colspan="3">Bob</th>
+                    <th>0 </th>
+                    <th>0 </th>
+                    <th><input id="field-of-grade2" placeholder="100"></th>
+                    <th>0</th>
+                    <th>0 </th>
+                    <th>0 </th>
+                    <th>0</th>
+                    <th>0 </th>
+                    <th>0 </th>
+                </tr>
+                <tr>
+                    <th colspan="3">Cindy</th>
+                    <th>0 </th>
+                    <th>0</th>
+                    <th>0 </th>
+                    <th>0</th>
+                    <th>0 </th>
+                    <th>0</th>
+                    <th>0 </th>
+                    <th>0 </th>
+                    <th>0 </th>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th colspan="3">Zax</th>
+                    <th>0 </th>
+                    <th>0</th>
+                    <th>0 </th>
+                    <th>0 </th>
+                    <th>0 </th>
+                    <th>0</th>
+                    <th>0 </th>
+                    <th>0 </th>
+                    <th>0 </th>
+                </tr>
+                </tfoot>
+             </table>
+        </td>
+        
+    </tr>
+</table>
+
+</body>
+</html>

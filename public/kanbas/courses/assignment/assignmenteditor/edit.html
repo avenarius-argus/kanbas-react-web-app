@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Assignments</title>
+</head>
+
+<body>
+
+<table>
+    
+    <tr>
+        <td valign = "top">
+            <ul>
+                <li><a href="/kanbas/account/profile/screen.html">Account</a></li>
+                <li><a href="/kanbas/dashboard/screen.html">Dashboard</a></li>
+                <li><a href="/kanbas/courses/home/screen.html">Courses</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            
+             </ul>
+        </td>
+
+        <td valign = "top">
+            <ul>
+                <li><a href="/kanbas/courses/home/screen.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom meetings</a></li>
+                <li><a href="/kanbas/courses/assignment/screen.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="/kanbas/courses/grade/screen.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Videos</a></li>
+                
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="/kanbas/courses/settings/index.html">Settings</a></li>
+             </ul>
+
+             
+        </td>
+        <td valign = "top">
+
+            <select id="editit">
+                <option selected value="Spd"> Speed Grader</option>
+            </select></br>
+
+            <label><h2>Assignment Name</h2>
+            <input type="text" placeholder="assignmentName"  value="A1 HTML"></br>
+            </label>
+            </br>
+            <textarea rows="2">This is the assignment description</textarea>
+            </br>
+            </br>
+            Points</br>
+            <input type="number" min="0" max="100"  placeholder="points"  value="100"></br>
+            
+            </br>
+            Assignment Group</br>
+            <select>
+                <option selected value="AssignGroup"> Assignment</option>
+            </select>
+            </br>
+            </br>
+            Display Grade As</br>
+            
+            <select>
+                <option selected value="AssignGroup"> Assignment</option>
+            </select>
+
+            
+        </td>
+        <td valign = "top">
+            
+            Submission Type
+            </br>
+            <select>
+                <option selected value="Online"> Online</option>
+            </select>
+
+            </br>
+            </br>
+            Online Entry Options</br>
+
+            <input type="checkbox" value="Text"
+            name="check-entry" id="chkbox-txt" checked/>
+            <label for="chkbox-txt">Text Entry</label>
+            <br/>
+
+            <input type="checkbox" value="Web"
+            name="check-entry" id="chkbox-Web" />
+            <label for="chkbox-Web">Website URL</label>
+            <br/>
+
+            <input type="checkbox" value="Media"
+            name="check-entry" id="chkbox-med" />
+            <label for="chkbox-med">Media Recoridng</label>
+            <br/>
+
+            <input type="checkbox" value="anno"
+            name="check-entry" id="chkbox-anno" />
+            <label for="chkbox-anno">Student Annotations </label>
+            <br/>
+
+
+            <input type="checkbox" value="file"
+            name="check-entry" id="chkbox-file" />
+            <label for="chkbox-file">File Uploads</label>
+            <br/>
+
+            
+
+
+            Submission Attempts 
+            </br>
+            <select id="subattempt">
+                <option value="one">Once</option>
+                <option selected="" value="Unlimit"> Unlimited</option>
+            </select>
+            </br>
+            Plagiarism Review
+            </br>
+            <select id="PlagReview">
+                <option value="yes">Yes</option>
+                <option selected="" value="None"> None</option>
+            </select>
+            </br>
+
+            Group Assignment</br>
+
+            <input type="checkbox" value="Group"
+            name="check-group" id="chkbox-groupas" checked/>
+            <label for="chkbox-groupas">This is a group assignment</label>
+            <br/>
+
+            Peer review</br>
+            <input type="checkbox" value="Peer"
+            name="check-review" id="chkbox-peer" />
+            <label for="chkbox-peer">Require Peer Review</label>
+            <br/>
+
+            Assign</br>
+            Assign To</br>
+            <input type="text" placeholder="asto"  value="Everyone"></br>
+            Due Date</br>
+            <input type="date" id="DueDate" name="DueDate"></br>
+
+            Availble from</br>
+            <input type="date" id="availble" name="availble"></br>
+            Until</br>
+            <input type="date" id="Until" name="Until"></br>
+            <a href="/kanbas/courses/assignment/screen.html"><button type="button">Cancel</button></a>
+            <a href="/kanbas/courses/assignment/screen.html"><button type="button">Save</button></a>
+
+        </td>
+
+
+<br/>
+<br/>

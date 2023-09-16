@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Assignments</title>
+</head>
+
+<body>
+
+<table>
+    
+    <tr>
+        <td valign = "top">
+            <ul>
+                <li><a href="/kanbas/account/profile/screen.html">Account</a></li>
+                <li><a href="/kanbas/dashboard/screen.html">Dashboard</a></li>
+                <li><a href="/kanbas/courses/home/screen.html">Courses</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            
+             </ul>
+        </td>
+
+        <td valign = "top">
+            <ul>
+                <li><a href="/kanbas/courses/home/screen.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom meetings</a></li>
+                <li><a href="/kanbas/courses/assignment/screen.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="/kanbas/courses/grade/screen.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Videos</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="/kanbas/courses/settings/index.html">Settings</a></li>
+             </ul>
+        </td>
+
+        <td valign = "top">
+            <li><a href="/kanbas/courses/settings/detail.html">Course Details</a></li>
+            <li><a href="#">Sections</a></li>
+            <li><a href="/kanbas/courses/settings/navi.html">Navigation</a></li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Feature Options</a></li>
+            <li><a href="#">Intergrations</a></li>
+        </td>
+        <td valign = "top">
+            <h2>Course Details</h2>
+            <table>
+                <tr>
+                    <td valign = "top">
+                        Image:<br>
+                        Name:<br>
+                        Course Code:<br>
+                        Blueprint Course:<br>
+                        Course Template:<br>
+                        Time Zone:<br>
+                        SIS ID:<br>
+                        Subaccount:<br>
+                        Term:<br>
+                        Participation:<br>
+                        Defualt due time:<br>
+                        Language:<br>
+                        Default due time: <br>
+                        Language: <br>
+                        File Storage: <br>
+                        Large Course: <br>
+                        Grading Scheme: <br>
+                        License: <br>
+                        File Copyright: <br>
+                        Visibility: <br>
+                        Format: <br>
+                        Mastery Paths: <br>
+                        Description: <br>
+                        
+                    </td>
+                    <td valing = "top">
+                        <form action="upload_image.php" method="post" enctype="multipart/form-data">
+                            Select image to upload:
+                            <input type="file" name="fileToUpload" id="fileToUpload"></form><br>
+                            CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]<br>
+                            CS4550.12631.202410<br>
+                            No<br>
+                            <labe><input type="checkbox" id="EnableTemp" name="option1">Enable Course as a Course Template</labe><br>
+                            <select>
+                                <option selected value="EST">Eastern Time (US & Canada)</option>
+                              </select>
+                            <br>
+                            <a href = "#">CS Undergrad</a>
+                            202410_1 Fall 2023 Semester Full Term<br>
+                            <select>
+                                <option selected value="T">Term</option>
+                            </select>
+                            Course participation is limited to term start and end dates.<br>
+                            start<br> <input type="date" id="start" name="start"><br>
+                            end<br>  <input type="date" id="end" name="end"><br>
+                            <input type="checkbox" value="RES1"
+                            name="rs1" id="chkbox-RESstart" checked/>
+                            <label for="chkbox-RESstart">Restrict students from viewing course before term start date</label>    <br/>
+                            
+                            <input type="checkbox" value="RES2"
+                                name="rs2" id="chkbox-RESend"/>
+                            <label for="chkbox-RESend">Restrict students from viewing course after term end date</label>    <br/>
+                            <select>
+                                <option selected value="DEF">Account default (11:59pm)</option>
+                            </select><br>
+                            This influences the user interface for setting due dates. It does not change the time due for any existing assignments.<br>
+                            <select>
+                                <option selected value="ENG">Not set (user-configurable, defaults to English (Unit)</option>
+                            </select><br>
+                            This will override any user/system language preferences. This is only recommended for foreign language courses<br>
+                            10000 megabytes<br><br>
+                            <input type="checkbox" value="Fl"
+                            name="fl" id="chkbox-FL" checked/>
+                            <label for="chkbox-FL">• Launch SpeedGrader Filtered by Student Group</label>    <br/>
+                            
+                            <input type="checkbox" value="Sc"
+                                name="sc" id="chkbox-SC"/>
+                            <label for="chkbox-SC">• Enable course grading scheme</label>    <br/>
+                            <select>
+                                <option selected value="Copyright">Private (Copyrighted)</option>
+                            </select><br>
+                            <input type="checkbox" value="Cr"
+                                name="cr" id="chkbox-CR"/>
+                            <label for="chkbox-CR">Copyright and license information must be provided for files before they are published.</label>    <br/>
+                            If you need to make your course public please contact your administrator/support.<br>
+                            <select>
+                                <option selected value="Crs">Course</option>
+                            </select>
+                            <br>
+
+                            <input type="checkbox" value="Pub"
+                                name="pub" id="chkbox-Pub"/>
+                            <label for="chkbox-Pub">Include this course in the public course index<br>
+                            <select>
+                                <option selected value="cpms">On-Campus</option>
+                            </select>
+                            <input type="checkbox" value="path" name="path" id="chkbox-Path"/>
+                            <label for="chkbox-Path">Enable individual learning paths for students based on assessment<br>
+
+
+                            <textarea rows="4" cols="50"></textarea><br>
+                            <a href = "#">More Options</a>
+                            <form action="/kanbas/courses/settings/detail.html">
+                                <input type="submit" value="Update Course Details">
+                    </td>
+                    
+            </table>
+        </td>
+    </tr>
+
+</table>
+</body>
+</html>
