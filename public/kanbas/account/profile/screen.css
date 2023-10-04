@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.align-right {
+    text-align: right;
+}
+
+.account-icon {
+    text-align: left;
+    font-size:8em;
+    color: grey;
+}
+
+.account-icon i {
+    margin-bottom: 10px;
+}
+
+.account-name h1 {
+    margin-bottom: 30px;
+}
+
+.btn-edit {
+    margin-top: 10px;
+}
+
+.contact-section,
+.biography-section,
+.links-section {
+    margin-top: 20px;
+}
+
+.screen-c{
+    color: red;
+}
+.edit-section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,35 @@
+
+.div-container {
+    display: flex;
+}
+.div-container .side-by-side {
+    display: inline-block;
+    vertical-align: top; /* Aligns the top of the elements */
+}
+
+.padding {
+    padding: 10px;
+}
+
+.red{
+    color: red;
+}
+.blk{
+    color: black;
+}
+.grn{
+    color: green;
+}
+.gry{
+    color: grey;
+}
+
+.hlink{
+    color: red;
+    text-decoration: none;
+}
+
+.asign{
+    color: black;
+    text-decoration: none;
+}
