@@ -25,7 +25,7 @@ const Status = () => {
 
     return (
         <>
-            <div className='row mb-2'>
+            <div className='row mb-2' style={{width:"250px"}}>
                 <span>
                     <button type='button' className='btn btn-outline-secondary btn-sm me-2'>
                             <FaBan />Unpublish
