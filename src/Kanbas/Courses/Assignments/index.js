@@ -97,8 +97,7 @@ function Assignments() {
                   <p class="m-0 text-secondary">{assignment.description}</p>
 
                   <p class="m-0 pb-1 text-secondary">
-                    Module || Due {assignment.dueDate} at 11:59pm |{" "}
-                    {assignment.points} pts
+                    Due {assignment.dueDate} at 11:59pm |availableFrom {assignment.availableFromDate} at 12:00am | Until {assignment.availableUntilDate} at 11:59pm
                   </p>
                 </div>
                 <div class="col pt-4">
