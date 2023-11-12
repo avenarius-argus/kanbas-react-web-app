@@ -86,9 +86,7 @@ function Dashboard() {
                   className="card"
                 >
                   <h5 class="card-title">
-                    <a href="#" class="card-link">
                       {course.name}
-                    </a>
                   </h5>
                 </Link>
                 <div class="card-text">

@@ -2,19 +2,49 @@ import { useParams } from "react-router-dom";
 import db from "../../Database";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaEllipsisV, FaPlus, FaGripVertical } from "react-icons/fa";
-import React, { useState } from "react";
+import React, { useEffect,useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   addModule,
   deleteModule,
   updateModule,
   setModule,
+  setModules,
+  
 } from "./modulesReducer";
+import { findModulesForCourse,createModule } from "./client";
+import * as client from "./client";
+
 function ModuleList() {
+
+
   const { courseId } = useParams();
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
 
   return (
     <div className="row pb-3">
@@ -38,15 +68,13 @@ function ModuleList() {
               }
             />
             <button
-              onClick={() =>
-                dispatch(addModule({ ...module, course: courseId }))
-              }
+              onClick={handleAddModule}
               className="btn btn-outline-secondary btn-sm me-1 "
             >
               Add
             </button>
             <button
-              onClick={() => dispatch(updateModule(module))}
+              onClick={handleUpdateModule}
               className="btn btn-outline-secondary btn-sm me-1"
             >
               Update
@@ -129,8 +157,8 @@ function ModuleList() {
                   </span>
                   <button
                     className="float-end btn btn-outline-secondary btn-sm me-1"
-                    onClick={() => dispatch(deleteModule(module._id))}
-                  >
+                    onClick={() => handleDeleteModule(module._id)}
+                    >
                     Delete
                   </button>
                   <button
