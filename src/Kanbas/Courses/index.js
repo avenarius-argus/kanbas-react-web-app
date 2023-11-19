@@ -12,7 +12,11 @@ import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 
 function Courses() {
-  const URL = "http://localhost:4000/api/courses";
+
+  const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:4000/api';
+  const COURSES_URL = `${API_BASE}/courses`;
+  const URL = COURSES_URL;
+
   const { courseId } = useParams();
   const [course, setCourse] = useState({});
   const findCourseById = async (courseId) => {
