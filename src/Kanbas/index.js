@@ -9,6 +9,9 @@ import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import store from "./store";
 import { Provider } from "react-redux";
+import Signin from "../users/signin";
+import Account from "../users/account";
+import UserTable from "../users/table";
 
 function Kanbas() {
   const [courses, setCourses] = useState(db.courses);
@@ -70,7 +73,11 @@ function Kanbas() {
         <KanbasNavigation />
         <div className="flex-grow-1">
           <Routes>
-            <Route path="Account" element={<h1>Account</h1>} />
+          <Route path="/admin/users" element={<UserTable />} />
+
+            <Route path="Account" element={<Account/>} />
+            <Route path="/Account/:id" element={<Account />} />
+
             <Route
               path="Dashboard"
               element={
@@ -94,6 +101,7 @@ function Kanbas() {
             <Route path="/Kanbas/Studio" element={<h1>Studio</h1>} />
             <Route path="/Kanbas/Commons" element={<h1>Commons</h1>} />
             <Route path="/Kanbas/Help" element={<h1>Help</h1>} />
+            <Route path="/Signin" element={<Signin />} />
           </Routes>
         </div>
       </div>

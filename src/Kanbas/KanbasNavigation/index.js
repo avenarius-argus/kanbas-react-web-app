@@ -4,10 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { FaUser, FaTachometerAlt, FaBook, FaCalendarAlt, FaInbox, FaHistory, FaPalette, FaUsers, FaQuestionCircle } from 'react-icons/fa';
 import './index.css'
+import { TbLogin2 } from "react-icons/tb";
 
 function KanbasNavigation() 
 {
-    const links = ["Account", "Dashboard", "Courses", "Calendar","Inbox","History","Studio","Commons","Help"];
+    const links = ["Account", "Dashboard", "Courses", "Calendar","Inbox","History","Studio","Commons","Help","Signin"];
     const { pathname } = useLocation();
 
     const getIcon = (link) => {
@@ -30,6 +31,8 @@ function KanbasNavigation()
             return <FaUsers />;
           case "Help":
             return <FaQuestionCircle />;
+          case "Signin":
+            return <TbLogin2 />;
           default:
             return null;
         }
